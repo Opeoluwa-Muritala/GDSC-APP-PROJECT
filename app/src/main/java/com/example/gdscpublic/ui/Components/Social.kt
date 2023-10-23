@@ -1,5 +1,7 @@
 package com.example.gdscpublic.ui.Components
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.ui.graphics.Color
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
@@ -17,21 +19,27 @@ import androidx.compose.material3.CardDefaults.cardColors
 import androidx.compose.material3.CardDefaults.cardElevation
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.gdscpublic.ui.theme.White
+import java.net.URI
 
 @Composable
 fun Contact(
     @DrawableRes icon: Int,
     SocialAccount: String,
-    color: Color
+    color: Color,
+    uri: String
 ){
+    val context = LocalContext.current
+    val intent = remember { Intent(Intent.ACTION_VIEW, Uri.parse(uri)) }
     Card(
         colors = cardColors(
             containerColor = color,
@@ -41,7 +49,7 @@ fun Contact(
             defaultElevation = 5.dp
         ),
         modifier = Modifier
-            .clickable { /*TODO*/ }
+            .clickable { context.startActivity(intent) }
             .height(50.dp).width(70.dp).padding(10.dp)
     ){
         Column(
