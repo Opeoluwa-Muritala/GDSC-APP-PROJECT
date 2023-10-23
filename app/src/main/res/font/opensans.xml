@@ -28,7 +28,7 @@
     <font
         android:fontStyle="italic"
         android:fontWeight="400"
-        android:font="@font/opensans_semiboldItalic"
+        android:font="@font/opensans_semibolditalic"
         />
     <font
         android:fontStyle="normal"
@@ -48,6 +48,6 @@
     <font
         android:fontStyle="italic"
         android:fontWeight="900"
-        android:font="@font/opensans_lightItalic"
+        android:font="@font/opensans_lightitalic"
         />
 </font-family>

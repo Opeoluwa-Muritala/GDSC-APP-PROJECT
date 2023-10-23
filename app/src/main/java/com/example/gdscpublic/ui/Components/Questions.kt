@@ -8,9 +8,13 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -23,6 +27,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.text.TextStyle
@@ -41,7 +46,7 @@ fun QuestionCard(
 ){
     var expanded by remember { mutableStateOf(false) }
     val extraPadding by animateDpAsState(
-        if (expanded) 10.dp else 0.dp,
+        if (expanded) 5.dp else 0.dp,
         animationSpec = spring(
             dampingRatio = Spring.DampingRatioHighBouncy,
             stiffness = Spring.StiffnessLow,
@@ -53,17 +58,25 @@ fun QuestionCard(
     )
     Surface(
         color = White,
-        modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp)
+        modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp).fillMaxWidth()
     ) {
         Column {
-            Row(Modifier.padding(24.dp)) {
+            Row(
+                Modifier.padding(extraPadding.coerceAtLeast(0.dp)).fillMaxWidth()
+                    .clickable {
+                        expanded = !expanded
+                    },
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
 
                 Text(
-                    question, style = TextStyle(
+                    question,
+                    style = TextStyle(
                         fontFamily = OpenSans,
-                        fontWeight = FontWeight.Normal,
+                        fontWeight = FontWeight.SemiBold,
                         fontStyle = FontStyle.Normal,
-                        fontSize = 10.sp
+                        fontSize = 15.sp
                     ),
                     color = color
                 )
@@ -73,7 +86,8 @@ fun QuestionCard(
                     Icon(
                         if (expanded) Icons.Default.KeyboardArrowDown else Icons.Default.KeyboardArrowUp,
                         null,
-                        tint = color
+                        tint = color,
+                        modifier = Modifier.size(40.dp)
                     )
                 }
             }
@@ -92,7 +106,7 @@ fun QuestionCard(
                             fontFamily = OpenSans,
                             fontWeight = FontWeight.Normal,
                             fontStyle = FontStyle.Normal,
-                            fontSize = 10.sp
+                            fontSize = 12.sp
                         )
                     )
                 }

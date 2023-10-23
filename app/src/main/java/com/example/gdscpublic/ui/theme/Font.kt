@@ -17,8 +17,8 @@ val OpenSans = FontFamily(
     Font(R.font.opensans_extrabolditalic, FontWeight.ExtraBold, FontStyle.Italic),
 
     Font(R.font.opensans_semibold, FontWeight.SemiBold, FontStyle.Normal),
-    Font(R.font.opensans_semiboldItalic, FontWeight.SemiBold, FontStyle.Italic),
+    Font(R.font.opensans_semibolditalic, FontWeight.SemiBold, FontStyle.Italic),
 
     Font(R.font.opensans_light, FontWeight.Light, FontStyle.Normal),
-    Font(R.font.opensans_lightItalic, FontWeight.Light, FontStyle.Italic),
+    Font(R.font.opensans_lightitalic, FontWeight.Light, FontStyle.Italic),
     )
