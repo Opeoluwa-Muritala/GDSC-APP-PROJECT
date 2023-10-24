@@ -122,82 +122,34 @@ fun Team() {
             Row(Modifier.horizontalScroll(rememberScrollState())) {
                 TeamMember(
                     "Black Black Sheep",
-                    "Lead",
+                    "Management Lead",
                     R.drawable.baseline_person_outline_24
                 ) {
                     Row {
                         imbutton(R.drawable.instagram)
-                        imbutton(R.drawable.whatsapp)
                         imbutton(R.drawable.x)
-                        imbutton(R.drawable.youtube)
-                        imbutton(R.drawable.github)
                     }
                 }
                 TeamMember(
                     "Black Black Sheep",
-                    "Lead",
+                    "Bla Bla Lead",
                     R.drawable.baseline_person_outline_24
                 ) {
                     Row {
                         imbutton(R.drawable.instagram)
-                        imbutton(R.drawable.whatsapp)
                         imbutton(R.drawable.x)
-                        imbutton(R.drawable.youtube)
                         imbutton(R.drawable.github)
                     }
                 }
                 TeamMember(
                     "Black Black Sheep",
-                    "Lead",
+                    "Design Lead",
                     R.drawable.baseline_person_outline_24
                 ) {
                     Row {
                         imbutton(R.drawable.instagram)
-                        imbutton(R.drawable.whatsapp)
                         imbutton(R.drawable.x)
                         imbutton(R.drawable.youtube)
-                        imbutton(R.drawable.github)
-                    }
-                }
-            }
-            Row(Modifier.horizontalScroll(rememberScrollState())) {
-                TeamMember(
-                    "Black Black Sheep",
-                    "Lead",
-                    R.drawable.baseline_person_outline_24
-                ) {
-                    Row {
-                        imbutton(R.drawable.ig)
-                        imbutton(R.drawable.whatsapp)
-                        imbutton(R.drawable.x)
-                        imbutton(R.drawable.youtube)
-                        imbutton(R.drawable.github)
-                    }
-                }
-                TeamMember(
-                    "Black Black Sheep",
-                    "Lead",
-                    R.drawable.baseline_person_outline_24
-                ) {
-                    Row {
-                        imbutton(R.drawable.ig)
-                        imbutton(R.drawable.whatsapp)
-                        imbutton(R.drawable.x)
-                        imbutton(R.drawable.youtube)
-                        imbutton(R.drawable.github)
-                    }
-                }
-                TeamMember(
-                    "Black Black Sheep",
-                    "Lead",
-                    R.drawable.baseline_person_outline_24
-                ) {
-                    Row {
-                        imbutton(R.drawable.ig)
-                        imbutton(R.drawable.whatsapp)
-                        imbutton(R.drawable.x)
-                        imbutton(R.drawable.youtube)
-                        imbutton(R.drawable.github)
                     }
                 }
             }

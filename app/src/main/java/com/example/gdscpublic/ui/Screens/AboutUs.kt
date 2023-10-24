@@ -160,7 +160,7 @@ fun AboutUs(){
             ElevatedCard(Modifier.fillMaxWidth().padding(20.dp)) {
                 HeaderText(
                     "Join Our Community",
-                    15,
+                    20,
                     if (isSystemInDarkTheme()) DarkWhite else Black
                 )
                 Text(
