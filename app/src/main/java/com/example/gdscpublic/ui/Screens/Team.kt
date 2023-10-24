@@ -106,7 +106,7 @@ fun Team() {
                 R.drawable.baseline_person_outline_24
             ) {
                 Row {
-                    imbutton(R.drawable.ig)
+                    imbutton(R.drawable.instagram)
                     imbutton(R.drawable.whatsapp)
                     imbutton(R.drawable.x)
                     imbutton(R.drawable.youtube)
@@ -126,7 +126,7 @@ fun Team() {
                     R.drawable.baseline_person_outline_24
                 ) {
                     Row {
-                        imbutton(R.drawable.ig)
+                        imbutton(R.drawable.instagram)
                         imbutton(R.drawable.whatsapp)
                         imbutton(R.drawable.x)
                         imbutton(R.drawable.youtube)
@@ -139,7 +139,7 @@ fun Team() {
                     R.drawable.baseline_person_outline_24
                 ) {
                     Row {
-                        imbutton(R.drawable.ig)
+                        imbutton(R.drawable.instagram)
                         imbutton(R.drawable.whatsapp)
                         imbutton(R.drawable.x)
                         imbutton(R.drawable.youtube)
@@ -152,7 +152,7 @@ fun Team() {
                     R.drawable.baseline_person_outline_24
                 ) {
                     Row {
-                        imbutton(R.drawable.ig)
+                        imbutton(R.drawable.instagram)
                         imbutton(R.drawable.whatsapp)
                         imbutton(R.drawable.x)
                         imbutton(R.drawable.youtube)

@@ -138,11 +138,11 @@ fun AboutUs(){
                     Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),
                     horizontalArrangement = Arrangement.Center
                 ) {
-                    imbutton(R.drawable.ig)
+                    imbutton(R.drawable.instagram)
                     imbutton(R.drawable.whatsapp)
                     imbutton(R.drawable.x)
                     imbutton(R.drawable.youtube)
-                    imbutton(R.drawable.github)
+                    imbutton(R.drawable.open_source_one)
                     imbutton(R.drawable.linkdin)
                     imbutton(R.drawable.tiktok)
                     imbutton(R.drawable.mail)
