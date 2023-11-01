@@ -84,7 +84,7 @@ fun QuestionCard(
                 IconButton(onClick = { expanded = !expanded })
                 {
                     Icon(
-                        if (expanded) Icons.Default.KeyboardArrowDown else Icons.Default.KeyboardArrowUp,
+                        if (expanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
                         null,
                         tint = color,
                         modifier = Modifier.size(40.dp)

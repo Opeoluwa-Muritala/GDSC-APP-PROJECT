@@ -1,5 +1,6 @@
 package com.example.gdscpublic.ui.Screens
 
+import GifImage
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -27,13 +28,10 @@ fun SplashScreen(navController: NavController){
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Image(
-                painterResource(R.drawable.gdsc_logo),
-                contentDescription = null
-            )
+            GifImage(image = R.drawable.splash)
         }
         LaunchedEffect(Unit) {
-            delay(2000)
+            delay(5000)
             navController.navigate(NavRoute.Main.route)
         }
     }

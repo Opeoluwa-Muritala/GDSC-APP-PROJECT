@@ -1,5 +1,6 @@
 package com.example.gdscpublic.ui.Screens
 
+import GifImage
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
@@ -33,6 +34,7 @@ import com.example.gdscpublic.ui.Components.TeamMember
 import com.example.gdscpublic.ui.Components.imbutton
 import com.example.gdscpublic.ui.theme.Black
 import com.example.gdscpublic.ui.theme.Blue
+import com.example.gdscpublic.ui.theme.DarkGreen
 import com.example.gdscpublic.ui.theme.DarkRed
 import com.example.gdscpublic.ui.theme.DarkWhite
 import com.example.gdscpublic.ui.theme.DarkYellow
@@ -87,13 +89,13 @@ fun Team() {
                     modifier = Modifier.width(90.dp)
                 )
             }
-            //GIF Animation /*TODO*/
         }
         Column(
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(bottom = 90.dp),
 
             ) {
-            //GDSC GIF /*TODO*/
+            //GDSC GIF /*ToDo*/
+            GifImage(image = R.drawable.team)
             HeaderText(
                 "GDSC LEAD",
                 20,
@@ -162,7 +164,7 @@ fun Team() {
             )
             Card(
                 modifier = Modifier.padding(vertical = 10.dp, horizontal = 10.dp),
-                colors = CardDefaults.cardColors(containerColor = White)
+                colors = CardDefaults.cardColors(containerColor = DarkWhite)
             ) {
                 GreetingCard(
                     R.drawable.whatsapp_back,
@@ -186,7 +188,7 @@ fun Team() {
                     Contact(
                         R.drawable.mail,
                         "gdsc_unilorin@gmail.com",
-                        DarkRed,
+                        DarkGreen,
                         "https://www.google.com/search?q=gdscunilorinemail"
                     )
                 }

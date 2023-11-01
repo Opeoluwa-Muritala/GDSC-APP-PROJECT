@@ -1,5 +1,6 @@
 package com.example.gdscpublic.ui.Screens
 
+import GifImage
 import android.content.Intent
 import android.net.Uri
 import androidx.compose.foundation.Image
@@ -98,13 +99,14 @@ fun AboutUs(){
                     modifier = Modifier.width(90.dp)
                 )
             }
-            //GIF Animation /*TODO*/
+
         }
         Column(
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(bottom = 90.dp),
 
         ) {
-
+            //GIF Animation /*ToDo*/
+            GifImage(image = R.drawable.gogle)
             ElevatedCard(Modifier.fillMaxWidth().padding(20.dp)) {
                 Text(
                     "Google Developer Student\n" +
